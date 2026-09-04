@@ -17,6 +17,7 @@ network:
     - defaults
     - github.blog
     - github.com
+    - awesome-copilot.github.com
 safe-outputs:
   create-pull-request:
     max: 1
@@ -35,11 +36,12 @@ Keep the site's GitHub information current using official GitHub sources.
 2. Use the GitHub repository API tools to read repository guidance and relevant reference files. Do not use terminal, CLI, or sandboxed commands for that repository guidance or reference-file reading.
 3. Use web fetch to read https://github.blog/latest/.
 4. Use web fetch to read https://github.blog/changelog/.
-5. Review the current contents of `site/content/github-info.md`.
-6. Identify only concise, practical updates that help developers learn GitHub faster. Preserve useful existing content and avoid speculative or duplicate items.
-7. Update `site/content/github-info.md` with well-supported information from the fetched GitHub Blog or Changelog pages. Mention the source whenever a change comes from either source, including a direct link where appropriate.
-8. Make the smallest focused edit needed. Do not modify workflow files, notes, or unrelated site files.
-9. Use the `create-pull-request` safe output to create a pull request for Mona to review. Do not write directly to `main`.
-10. If no worthwhile, source-backed update is available, leave the file unchanged and do not open a pull request.
+5. Use web fetch to read https://awesome-copilot.github.com/workflows/.
+6. Review the current contents of `site/content/github-info.md`.
+7. Identify only concise, practical updates that help developers learn GitHub faster. Preserve useful existing content and avoid speculative or duplicate items.
+8. Update `site/content/github-info.md` with well-supported information from the fetched GitHub Blog, Changelog, or Awesome Copilot workflows pages. Mention the source whenever a change comes from any of these sources, including a direct link where appropriate.
+9. Make the smallest focused edit needed. Do not modify workflow files, notes, or unrelated site files.
+10. Use the `create-pull-request` safe output to create a pull request for Mona to review. Do not write directly to `main`.
+11. If no worthwhile, source-backed update is available, leave the file unchanged and do not open a pull request.
 
 When proposing a pull request, include a concise title and body that summarize the content changes and cite the official sources reviewed.
